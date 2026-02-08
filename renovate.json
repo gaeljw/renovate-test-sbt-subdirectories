@@ -8,9 +8,6 @@
     ":enableVulnerabilityAlertsWithAdditionalLabel(🛡️-security)",
     ":label(⚒️-renovate)",
     ":semanticCommits",
-    "customManagers:mavenPropertyVersions",
-    "customManagers:dockerfileVersions",
-    "customManagers:gitlabPipelineVersions",
       ":automergeDigest",
       ":automergeLinters",
       ":automergePatch"
