@@ -1,17 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
    "extends": [
-          ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers",
-
-    "group:monorepos",
-    "group:recommended",
-    "mergeConfidence:age-confidence-badges",
-    "replacements:all",
-    "workarounds:all",
-    "helpers:githubDigestChangelogs",
-    "helpers:goXPackagesChangelogLink",
-    "helpers:goXPackagesNameLink",
+          "config:recommended",
     ":dependencyDashboard",
     ":enableVulnerabilityAlertsWithAdditionalLabel(🛡️-security)",
     ":label(⚒️-renovate)",
@@ -19,5 +9,8 @@
       ":automergeDigest",
       ":automergeLinters",
       ":automergePatch"
-    ]
+    ],
+  "sbt": {
+    "ignorePaths": []
+  }
 }
